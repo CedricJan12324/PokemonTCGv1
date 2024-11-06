@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon TCG: Surging Sparks</title>
+    <style>
+        /* Basic styles for layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Header with logo and navigation links */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #000;
+        }
+        .header img {
+            height: 50px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #ffcc00;
+            cursor: pointer;
+        }
+
+        /* Surging Sparks section */
+        .surging-sparks-section {
+            background: linear-gradient(orange, yellow);
+            padding: 40px 20px;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .surging-sparks-logo {
+            width: 250px;
+            margin-right: 20px;
+        }
+        .text-content {
+            max-width: 500px;
+            text-align: left;
+        }
+        .card-images {
+            display: flex;
+            gap: 10px;
+        }
+        .card-images img {
+            height: 150px;
+            border-radius: 10px;
+        }
+        .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Tab section for SEE ALL, ACE SPEC, etc. */
+        .tabs {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+            background-color: #ffcc00;
+            padding: 10px;
+        }
+        .tabs a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .tabs a:hover {
+            background-color: #e68a00;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Card grid section */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .card-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .card-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Overlay styles */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .overlay img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .surging-sparks-section {
+                padding: 20px;
+                flex-direction: column;
+            }
+            .surging-sparks-logo {
+                width: 200px;
+                margin: 0 auto 20px;
+            }
+            .text-content {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .card-images {
+                justify-content: center;
+            }
+            .card-images img {
+                height: 120px;
+            }
+            .header, .tabs {
+                flex-direction: column;
+            }
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+    <img src="https://tcg.pokemon.com/assets/img/global/logos/en-us/tcg-logo-2x.png" alt="Pokemon TCG Logo">
+    <div class="nav-links">
+        <a href="#">SURGING SPARKS</a>
+        <a href="#">STELLAR CROWN</a>
+        <a href="#">TEAL MASK</a>
+    </div>
+</div>
+
+<!-- Surging Sparks Section -->
+<div class="surging-sparks-section">
+    <div class="content-container">
+        <img class="surging-sparks-logo" src="https://tcg.pokemon.com/assets/img/sv-expansions/surging-sparks/logo/en-us/sv8-logo-2x.png" alt="Surging Sparks Logo">
+        <div class="text-content">
+            <h1>Browse the Pokémon TCG: Scarlet & Violet—Surging Sparks Expansion</h1>
+            <p>The Pokémon TCG: Scarlet & Violet—Surging Sparks expansion evokes laidback, tropical vibes with new Pokémon originally discovered in Alola. Presenting these cards is your very own splashy companion, complete with calming ocean waves and a balmy breeze.</p>
+        </div>
+        <div class="card-images">
+            <img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_57-2x.png" alt="Card 1">
+            <img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_133-2x.png" alt="Card 2">
+        </div>
+    </div>
+</div>
+
+<!-- Tabs Section -->
+<div class="tabs">
+    <a href="surf.html">SEE ALL</a>
+    <a href="ace.html">ACE SPEC</a>
+    <a href="special.html">SPECIAL ART</a>
+    <a href="ex.html">POKEMON EX</a>
+</div>
+
+<!-- Card Grid Section -->
+<div class="card-grid">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_192-2x.png" alt="Card 192" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_193-2x.png" alt="Card 193" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_194-2x.png" alt="Card 194" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_195-2x.png" alt="Card 195" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_197-2x.png" alt="Card 197" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_198-2x.png" alt="Card 198" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_199-2x.png" alt="Card 199" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_200-2x.png" alt="Card 200" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_201-2x.png" alt="Card 201" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_203-2x.png" alt="Card 203" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_204-2x.png" alt="Card 204" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_205-2x.png" alt="Card 205" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_206-2x.png" alt="Card 206" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_207-2x.png" alt="Card 207" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_208-2x.png" alt="Card 208" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_209-2x.png" alt="Card 209" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_210-2x.png" alt="Card 210" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_211-2x.png" alt="Card 211" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_213-2x.png" alt="Card 213" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_214-2x.png" alt="Card 214" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_218-2x.png" alt="Card 218" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_219-2x.png" alt="Card 219" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_220-2x.png" alt="Card 220" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_222-2x.png" alt="Card 222" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_224-2x.png" alt="Card 224" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_225-2x.png" alt="Card 225" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_228-2x.png" alt="Card 228" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_230-2x.png" alt="Card 230" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_231-2x.png" alt="Card 231" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_232-2x.png" alt="Card 232" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_233-2x.png" alt="Card 233" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_234-2x.png" alt="Card 234" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_235-2x.png" alt="Card 235" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_237-2x.png" alt="Card 237" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_238-2x.png" alt="Card 238" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_239-2x.png" alt="Card 239" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_241-2x.png" alt="Card 241" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_242-2x.png" alt="Card 242" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_244-2x.png" alt="Card 244" onclick="showOverlay(this.src)">
+<img src="https://dz3we2x72f7ol.cloudfront.net/expansions/surging-sparks/en-us/SV08_EN_246-2x.png" alt="Card 246" onclick="showOverlay(this.src)">
+
+</div>
+
+<!-- Overlay for zoomed card -->
+<div class="overlay" id="overlay" onclick="hideOverlay()">
+    <img id="overlayImage" src="" alt="Zoomed Card">
+</div>
+
+<script>
+    function showOverlay(src) {
+        document.getElementById('overlayImage').src = src;
+        document.getElementById('overlay').style.display = 'flex';
+    }
+
+    function hideOverlay() {
+        document.getElementById('overlay').style.display = 'none';
+    }
+</script>
+ <!-- Hidden Audio Player -->
+ <audio id="background-music" loop muted>
+    <source src="Pokémon Theme.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+ </audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const audio = document.getElementById('background-music');
+        
+        // Attempt to play on user interaction
+        const playAudio = () => {
+            audio.muted = false;
+            audio.play().catch(error => {
+                console.log('Autoplay prevented, will retry on user interaction');
+            });
+            document.removeEventListener('click', playAudio);
+            document.removeEventListener('scroll', playAudio);
+        };
+
+        // Attempt autoplay
+        audio.play().catch(() => {
+            // If autoplay is blocked, wait for user interaction to play
+            document.addEventListener('click', playAudio);
+            document.addEventListener('scroll', playAudio);
+        });
+    });
+</script>
+
+<!-- Footer Section -->
+<div style="background-color: #fff; padding: 20px; text-align: center; color: #000; font-size: 14px; font-family: Arial, sans-serif;">
+    <!-- Social Media Links -->
+    <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 20px;">
+        <a href="https://www.facebook.com/Pokemon" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://x.com/Pokemon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+            <img src="https://img.freepik.com/premium-vector/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023_929078-218.jpg" alt="Twitter" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.instagram.com/pokemon/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.pinterest.com/stefaniepolka/pokemon/" target="_blank">
+            <img src="https://static-00.iconduck.com/assets.00/pinterest-icon-2048x2048-d7p0u7c5.png" alt="Pinterest" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.twitch.tv/pokemon" target="_blank">
+            <img src="https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitch-circle-512.png" alt="Twitch" style="width: 30px; height: 30px;">
+        </a>
+    </div>
+
+    <!-- Centered Image -->
+    <div>
+        <img src="https://tcg.pokemon.com/assets/img/components/main-footer/en-us/tpc-2x.png" alt="Pokémon Company Logo" style="max-width: 150px; margin-bottom: 20px;">
+    </div>
+
+    <!-- Legal Text -->
+    <div style="max-width: 600px; margin: 0 auto; line-height: 1.5;">
+        <p>Android, Google Play, and the Google Play logo are trademarks of Google LLC.</p>
+        <p>Apple, App Store, and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+        <p>©️️2024 Pokémon. ©️️1995–2024 Nintendo / Creatures Inc. / GAME FREAK inc. TM, ®, and character names are trademarks of Nintendo.</p>
+        <p>HTML CREATED BY: JUVEL T. TENIO</p>
+    </div>
+</div>
+</body>
+</html>
